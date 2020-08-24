@@ -9,13 +9,13 @@ client = MongoClient("localhost",27017)
 db = client.examples
 collection = db.myWebsites
 website={}
-website["Link"] = "www.gamw"
-website["Source Link"] = "www.gamw"
-website["is Crawled"] = "www.gamw"
+website["Link"] = ""
+website["Source Link"] = ""
+website["is Crawled"] = False
 website["Last Crawl Dt"] = "www.gamw"
-website["Response Status"] = "www.gamw"
-website["Content Type"] = "www.gamw"
-website["Content Length"] = "www.gamw"
+website["Response Status"] = "r = requests.get('https://httpbin.org/get')  r.status_code"
+website["Content Type"] = "r.headers['Content-Type']"
+website["Content Length"] = 0
 website["File Path"] = "www.gamw"
 website["Created at"] = "www.gamw"
 collection.insert_one(website)
